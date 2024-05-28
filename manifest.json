@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "My First Extension",
+    "version": "1.0",
+    "description": "This is a simple browser extension.",
+    "icons": {
+      "48": "icon.png"
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon.png"
+      }
+    },
+    "permissions": [
+      "activeTab",
+      "https://esm.run/*"  
+    ],
+    "content_security_policy": "script-src 'self' 'sha256-abc123' https://esm.run; object-src 'self'"
+  }
+  
